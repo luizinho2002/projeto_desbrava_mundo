@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart'; // Importação necesária para tipos como String, etc.
-
-// Esta classe representa a estrutura de um destino de viagem
-// Ela é um "modelo" que define quais dados um destino terá
+// Esta classe representa a estrutura de um destino de viagem.
+// Ela é um "modelo" que define quais dados um destino terá.
 class Destination {
   final String name; // O nome do destino (ex: "Paris", "Toquio")
   final String description; // Uma breve descrição sobre o destino
