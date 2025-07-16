@@ -78,9 +78,11 @@ class DestinationDetailScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Row(
-                    Icon(Icons.star, color: Colors.amber),
-                    SizedBox(width: 5),
-                    Text('Avaliação: 4.8', style: TextStyle(fontSize: 16)),
+                    children: [
+                      Icon(Icons.star, color: Colors.amber),
+                      SizedBox(width: 5),
+                      Text('Avaliação: 4.8', style: TextStyle(fontSize: 16)),
+                    ],
                   ),
                 ],
               ),
