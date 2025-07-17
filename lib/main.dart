@@ -1,3 +1,5 @@
+import 'package:desbrava_mundo/screens/login_screen.dart';
+import 'package:desbrava_mundo/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:desbrava_mundo/models/destination.dart'; // Importa nosso modelo de destino
 import 'package:desbrava_mundo/screens/destination_list_screen.dart'; // Importa a tela de lista de destinos
@@ -18,14 +20,19 @@ class MyApp extends StatelessWidget {
     // 'MaterialApp' é um widget que implementa o Material Design.
     // Ele fornece a estrutura básica para um aplicativo visualmente rico.
     return MaterialApp(
-      title: 'Meu App de Viagens', // Título que aparece na barra de tarefas do Android, por exemplo
+      title:
+          'Meu App de Viagens', // Título que aparece na barra de tarefas do Android, por exemplo
       theme: ThemeData(
-        primarySwatch: Colors.blue, // Define a cor primária do aplicativo (azul)
-        visualDensity: VisualDensity.adaptivePlatformDensity, // Ajusta a densidade visual para diferentes plataformas
+        primarySwatch:
+            Colors.blue, // Define a cor primária do aplicativo (azul)
+        visualDensity: VisualDensity
+            .adaptivePlatformDensity, // Ajusta a densidade visual para diferentes plataformas
         fontFamily: 'Inter', // Define a fonte padrão para todo o aplicativo
       ),
       // 'home' define a tela inicial que será exibida quando o aplicativo for iniciado.
-      home: DestinationListScreen(),
+      home: LoginScreen(),
+      // NOVO: Remove a faixa "DEBUG" no canto superior direito
+      debugShowCheckedModeBanner: false,
     );
   }
 }
