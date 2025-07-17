@@ -24,20 +24,11 @@ class DestinationDetailScreen extends StatelessWidget {
             Hero(
               // 'Hero' cria uma animação de transição suave para a imagem quando se navega entre telas. A 'tag' deve ser única
               tag: destination.name,
-              child: Image.network(
+              child: Image.asset(
                 destination.imageUrl, // Carrega a imagem do destino
                 height: 300, // Altura da imagem
                 width: double.infinity, // Ocupa toda a largura disponível
                 fit: BoxFit.cover, // Garante que a imagem preencha o espaço
-                errorBuilder: (context, error, stackTrace) {
-                  // Fallback para a imagem caso a URL não carregue
-                  return Image.network(
-                    'https://placehold.co/600x400/CCCCCC/000000?text=Imagem+Nao+Disponivel',
-                    height: 300,
-                    width: double.infinity,
-                    fit: BoxFit.cover,
-                  );
-                },
               ),
             ),
             Padding(
