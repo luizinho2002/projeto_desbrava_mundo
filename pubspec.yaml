@@ -66,6 +66,7 @@ flutter:
     - assets/images/roma.jpg
     - assets/images/sydney.jpg
     - assets/images/toquio.jpg
+    - assets/images/icone_app.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
